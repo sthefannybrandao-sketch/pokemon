@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
@@ -35,4 +37,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pokemon-card{
+    border:5px solid #fac342;
+  align-items: center;
+  background:#f96943;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: rgba(#f96943, #fac342, white, )
+}
+
+.pokemon-container{
+  transform: scale(1.30);
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  
+}
+
+.App{
+  text-align: center;
+  align-items: center;
+  
 }

@@ -45,7 +45,10 @@
   background:#f96943;
   padding: 40px;
   border-radius: 10px;
-  background-color: rgba(#f96943, #fac342, white, )
+  background-image: linear-gradient(#f96943, #fac342, white, )
+}
+.pokemon-card h2{
+  align-:left;
 }
 
 .pokemon-container{
@@ -60,8 +63,3 @@
   
 }
 
-.App{
-  text-align: center;
-  align-items: center;
-  
-}

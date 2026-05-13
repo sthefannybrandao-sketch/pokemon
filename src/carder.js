@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css';
+import './carder.css';
 
 function App() {
   const [pokemons, setPokemons] = useState({})
@@ -11,7 +11,8 @@ function App() {
     const getData = async () => {
       try {
         const res = await
-          axios.get('https://pokeapi.co/api/v2/pokemon/fennekin');
+         axios.get('https://pokeapi.co/api/v2/pokemon/fennekin');
+         
         setPokemons(res.data);
         console.log('success:', res.data);
         setLoading(false);
@@ -41,20 +42,22 @@ function App() {
 
   return (
     <div className="app"> 
-       <h1> poke card</h1>
        <div className="pokemon-container"> 
 
        <div className="pokemon-card">
-       <h3>{pokemons.name}</h3>
-       <h3>{pokemons.tipo}</h3>
-       <img src={pokemons.sprites.front_shiny} alt={pokemons.name}/>
+        
+       <h2>{pokemons.name}</h2>
+        
+       <img src={pokemons.sprites.front_default } alt={pokemons.name}/>
        <h3>{pokemons.stats[0].stat.name + ''+
      pokemons.stats[0].base_stat + pokemons.stats[1].stat.name + '' +
-     pokemons.stats[0].base_stat}</h3>
+     pokemons.stats[0].base_stat +
+     pokemons.types[0].type.name }</h3>
+      
         </div>
         </div>
         </div>
   );
 }
 
-export default App;
+export default carder;

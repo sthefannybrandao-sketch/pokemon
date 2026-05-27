@@ -1,0 +1,22 @@
+.containerInicio{
+    text-align: center;
+    background: rgb(204, 178, 178);
+}
+.cardInicio {
+      
+     width: 500px;
+   margin-top: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   border-color: rgb(128, 128, 69);
+    
+}
+.ela{
+    height: 100px;
+    width: 100px;
+
+}
+.cardInicio img{
+    width: 50px;
+}
+

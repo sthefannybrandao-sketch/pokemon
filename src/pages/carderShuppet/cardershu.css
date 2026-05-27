@@ -1,0 +1,27 @@
+
+
+.pokemon-container3{
+    background-color: #993cbe;
+    transform: scale(1.30);
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+ }
+.pokemon-card3{
+    border: 3px solid   rgba(226, 203, 235, 0.918);
+    padding: 20px;
+    border-radius: 10px;
+  background: linear-gradient(to right, #be48e2, #dbbce4,#be48e2);
+   
+}
+.pokemon-card3 img{
+    background-image: url("../../assets/fundoshu.png");/* chamando imagem e cortando ela */
+     background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+}

@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;/* cor */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  
+
+}
+.pokemon-card{
+  border: 3px solid  rgba(236, 198, 73, 0.918);
+  background-color: #d46a24;
+  border-radius: 10px;
+  height:270px;
+  padding: 10px;
+background: linear-gradient(to right, #f7a101, #f8eeb7,#f7a101);
+ 
+}
+
+.pokemon-card img{
+  background-image: url("../../assets/fundofene.png");/* chamando imagem e cortando ela */
+background-size: 90%;
+background-repeat: no-repeat;
+background-position: center;
+padding: 20px;
+
+}
+.pokemon-container{
+    background-color: #d46a24;
+  transform: scale(1.30);
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+   
+  
+}
+.App-link {
+  color: #61dafb;
+}
+
+.body{
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+ 

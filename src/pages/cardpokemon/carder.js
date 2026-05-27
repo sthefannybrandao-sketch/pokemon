@@ -1,33 +1,14 @@
+//trazendo as ferramentas de fora para dentro do nosso arquivo//
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import './carder.css';
+import axios from 'axios'; // buscar dados na internet//
+import './carder.css';//Traz o (estilo) do nosso card//
+import useFetchPokeapi from "../../hooks/useFstchPokeApi"
+ 
+function Carder() {
+  const {pokemons, loading, error} = useFetchPokeapi("fennekin"); 
 
-function App() {
-  const [pokemons, setPokemons] = useState({})
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const res = await
-         axios.get('https://pokeapi.co/api/v2/pokemon/fennekin');
-         
-        setPokemons(res.data);
-        console.log('success:', res.data);
-        setLoading(false);
-
-      }
-      catch (err) {
-        console.error("erro ao carregar API", err);
-        setLoading(false)
-        setError(true)
-      }
-    };
-    getData();
-  }, {});
-
-
+  
+  
   if (loading) return (
     <div className="loader">
       carregando pokédex...
@@ -45,6 +26,8 @@ function App() {
        <div className="pokemon-container"> 
 
        <div className="pokemon-card">
+
+    
         
        <h2>{pokemons.name}</h2>
         
@@ -59,5 +42,5 @@ function App() {
         </div>
   );
 }
-
-export default carder;
+//Permite que a nossa página principal (App.js) use esse card//
+export default Carder;

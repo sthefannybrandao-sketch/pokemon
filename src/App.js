@@ -3,10 +3,8 @@ import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom"; 
 
 // Importa as páginas do projeto
-import Carder from "./pages/cardpokemon/carder"; // Página do Fennekin
-import Trainer from "./pages/home/home"; // Página Inicial (Perfil)
-import CarderPopplio from "./pages/cardPopplio/carderPopplio"; // Página do Popplio
-import CarderShuppet from "./pages/carderShuppet/cardershu"; // Página do Popplio
+ import Trainer from "./pages/home/home"; // Página Inicial (Perfil)
+ import CarderShuppet from "./pages/carderShuppet/cardershu"; // Página do Popplio
 
 
 function App() {

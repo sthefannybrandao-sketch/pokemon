@@ -1,9 +1,9 @@
 //trazendo as ferramentas de fora para dentro do nosso arquivo//
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // buscar dados na internet//
 import './cardershu.css';//Traz o (estilo) do nosso card//
 import useFetchPokeapi from "../../hooks/useFstchPokeApi";
 import { useParams } from "react-router-dom";
+import axios from 'axios';
  
 
 
@@ -12,6 +12,7 @@ function CarderShuppet() {
   const { id } = useParams();// ele pegar informaçao da url 
   const {pokemons, loading, error} = useFetchPokeapi(id); //pegar as informacoes do pokemon que vc ta utilizando no API, API: e tipo uma ponte 
   //que permite que dois aplicativos ou sistemas diferentes conversem entre si. ex://
+  const[poke,setPoke] = useState({})
 
   
   
@@ -26,13 +27,26 @@ function CarderShuppet() {
       ocorreu um erro inesperado
   </div>
   );
+
+  if(pokemons){
+    setPoke(
+      {
+        "nome":pokemons.name,
+        "vida":pokemons.stats,[0].base_stat,
+        "ataque":pokemons.stats,[1].base_stat,
+        "tipo":pokemons.types,[0]
+        ""
+        
+      }
+    )
+  }
    
   return (
      
-    <div className="app3"> 
-       <div className="pokemon-container3"> 
+    <div className={`app3 ${pokemons.types[0].type.name}`}> 
+       <div className={`pokemon-container3 ${pokemons.types[0].type.name}`}> 
 
-       <div className="pokemon-card3">
+       <div className={`pokemon-card3 ${pokemons.types[0].type.name}`}>
 
     
         

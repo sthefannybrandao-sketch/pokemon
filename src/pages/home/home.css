@@ -1,22 +1,91 @@
-.containerInicio{
-    text-align: center;
-    background: rgb(204, 178, 178);
+
+
+
+/* TELA INTEIRA (Deixa tudo centralizado e joga o fundo para trás) */
+.containerInicio {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+     
 }
-.cardInicio {
-      
-     width: 500px;
-   margin-top: 100px;
-   margin-left: auto;
-   margin-right: auto;
-   border-color: rgb(128, 128, 69);
+
+/* ÁREA DO TÍTULO */
+.main-bg {
+    text-align: center;
+    margin-bottom: 0px;
+    z-index: 10; /* Fica por cima do fundo */
+
+
+
+}
+
+.main-bg h1 {
+    font-family: "Press Start 2P", cursive;
+    font-size: 24px;
+    color: #0a2e5c;
+    text-shadow: 2px 2px 0px rgb(147, 156, 209);
+    margin: 15px;
     
 }
-.ela{
-    height: 100px;
-    width: 100px;
 
-}
-.cardInicio img{
-    width: 50px;
+/* CARD AMARELO (Agora com largura menor e fixa) */
+.cardInicio {
+    width: 90%;
+    max-width: 300px;    /* Largura reduzida do card amarelo */
+    background: #0a2e5c;
+    border: 8px solid #051335;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;         /* Garante que fica na frente do fundo */
+    margin-top: 250px;
 }
 
+/* TEXTOS DE DENTRO DO CARD */
+/* p de paragrafo*/
+.cardInicio p { 
+    font-family: "Press Start 2P", cursive;
+    font-size: 10px;     /* Tamanho ideal para não quebrar a linha */
+    line-height: 1.6;
+    color: #adc9f1;     /* Azul escuro para dar leitura no amarelo */
+    margin-top: 0;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    
+}
+
+/* LINKS DOS BOTÕES (Garante que fiquem lado a lado) */
+.cardInicio a {
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+/* O BOTÃO AMARELO (Controla o tamanho da imagem do botão) */
+.cardInicio img {
+    width: 50px;         /* Diminui a largura do seu botão amarelo */
+    height: auto;
+    display: block;
+}
+
+/* IMAGEM DE FUNDO POKÉMON */
+.FUNDO {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;          /* Fica atrás de tudo */
+}
+
+.FUNDO img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Faz a imagem cobrir a tela sem amassar */
+}

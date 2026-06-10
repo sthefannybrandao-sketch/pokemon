@@ -1,7 +1,96 @@
 
 
-.pokemon-container3{
-    background-color: #993cbe;
+.pokemon-container3.ghost{
+    background-color:  #e5daeb;
+    transform: scale(1.30);
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+     
+ }
+.pokemon-card3.ghost{
+    border: 3px solid   rgba(71, 21, 90, 0.918);
+    padding: 20px;
+    border-radius: 10px;
+  background: linear-gradient(to right, #bc51dd, #e5daeb,#bc51dd);
+   
+}
+.pokemon-card3.ghost img{
+    background-image: url("../../assets/fundoshu.png");/* chamando imagem e cortando ela */
+     background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+}
+/* fenekkin */
+ 
+.pokemon-card3.fire{
+  border: 3px solid   rgba(255, 146, 4, 0.918);
+  padding: 15px;
+  border-radius: 10px;
+background: linear-gradient(to right, #e77d04, #f1bb73,#ee840a);
+ 
+}
+
+.pokemon-card3.fire img{
+  background-image: url("../../assets/fundofene.png");/* chamando imagem e cortando ela */
+   background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+padding: 10px;
+}
+ 
+.pokemon-container3.fire {
+  /* seu código aqui */
+
+  background-color:#f1bb73;
+    transform: scale(1.30);
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.pokemon-card3.water{
+  border: 3px solid  rgba(15, 8, 112, 0.918);
+  padding: 20px;
+  border-radius: 10px;
+background: linear-gradient(to right, #3372d1, #c4d8ee,#3372d1);
+
+ 
+}
+
+.pokemon-card3.water img{
+  background-image: url("../../assets/fundopopplio.png");/* chamando imagem e cortando ela */
+   background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+padding: 10px;
+}
+
+.pokemon-container3.water{
+  background-color:  #c4d8ee; /* Substitua pelo código da cor que você deseja */
+  transform: scale(1.30);
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+
+
+  .pokemon-container3.bug{
+    background-color: #bdeb91;
     transform: scale(1.30);
     height: 100vh;
     display:flex;
@@ -11,17 +100,17 @@
     margin: 20px;
     text-align: center;
  }
-.pokemon-card3{
-    border: 3px solid   rgba(226, 203, 235, 0.918);
-    padding: 20px;
-    border-radius: 10px;
-  background: linear-gradient(to right, #be48e2, #dbbce4,#be48e2);
-   
+ .pokemon-card3.bug{
+  border: 3px solid   rgba(237, 248, 78, 0.918);
+  padding: 20px;
+  border-radius: 10px;
+background: linear-gradient(to right, #5cbd36, #bdeb91,#5cbd36);
+ 
 }
-.pokemon-card3 img{
-    background-image: url("../../assets/fundoshu.png");/* chamando imagem e cortando ela */
+.pokemon-card3.bug img{
+    background-image: url("../../assets/fundobug.png");/* chamando imagem e cortando ela */
      background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20px;
+  padding: 10px;
 }
